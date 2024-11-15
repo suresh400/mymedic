@@ -1,0 +1,93 @@
+/* Table Container */
+.notifications {
+  display: flex;
+  justify-content: center; /* Center table horizontally */
+  align-items: center; /* Center table vertically */
+  flex-direction: column;
+  height: 70vh;  /* Ensure the height is 80% of the viewport */
+  margin: 0 auto; /* Center content horizontally */
+  width: 100%;
+  text-align: center;
+}
+
+/* Table Styling */
+.notifications table {
+  width: 70%;  /* Table width set to 80% of the parent container */
+  max-width: 1800px;  /* Max width of the table to avoid it being too large on wide screens */
+  border-collapse: collapse;
+  font-family: 'Arial', sans-serif;
+  margin-bottom: 20px;  /* Space between table and pagination */
+}
+
+.notifications th, .notifications td {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.notifications th {
+  background-color: #f4f4f4;
+  color: #333;
+  font-weight: bold;
+}
+
+.notifications tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.notifications tr:hover {
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+.notifications td {
+  color: #555;
+  font-size: 0.95rem;
+}
+
+/* Pagination Styling */
+.pagination {
+  display: flex;
+  justify-content: center;  /* Center pagination buttons horizontally */
+  margin-top: 20px;
+  width: 100%;
+  position: relative; /* Position pagination at the bottom */
+  bottom: 0;
+}
+
+.pagination button {
+  background-color: #007bff;
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  margin: 0 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.pagination button:hover {
+  background-color: #0056b3;
+}
+
+.pagination button:disabled {
+  background-color: #c0c0c0;
+  cursor: not-allowed;
+}
+
+/* Responsive Table Styling */
+@media (max-width: 768px) {
+  .notifications table {
+    font-size: 0.85rem;
+    width: 95%;  /* Adjust width for smaller screens */
+  }
+
+  .notifications th, .notifications td {
+    padding: 8px 10px;
+  }
+
+  .pagination button {
+    padding: 8px 12px;
+  }
+}

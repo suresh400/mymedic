@@ -1,0 +1,58 @@
+@import url("app.css");
+
+/* Apply Doctor Section */
+.apply-doctor-section {
+  margin: 2rem auto; /* Added top and bottom margin for spacing */
+  width: 100%;
+  max-width: 600px; /* Set max-width for better control on large screens */
+  padding: 1.5rem; /* Add padding for spacing inside the section */
+  box-sizing: border-box; /* Ensure padding doesn’t affect width */
+  background-color: #ffffff; /* Light background for the section */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Apply Doctor Container */
+.apply-doctor-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+  padding: 2rem; /* Add padding for spacing inside the container */
+  box-sizing: border-box; /* Ensure padding doesn’t affect width */
+  background-color: #f9f9f9; /* Light grey background for contrast */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Light shadow */
+}
+
+/* Option Styling */
+option {
+  text-transform: capitalize; /* Capitalize the first letter of options */
+  font-size: 1rem; /* Consistent font size for options */
+  padding: 0.5rem; /* Add padding to make the options more clickable */
+  background-color: #fff; /* White background for options */
+  color: #333; /* Dark text color for readability */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1024px) {
+  .apply-doctor-section {
+    width: 80%; /* Adjust width on medium-sized screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .apply-doctor-section {
+    width: 90%; /* Take up more space on smaller screens */
+  }
+}
+
+@media (max-width: 576px) {
+  .apply-doctor-section {
+    width: 95%; /* Full-width for very small screens like mobile phones */
+  }
+}

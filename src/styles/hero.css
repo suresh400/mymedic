@@ -1,0 +1,127 @@
+/* Hero Section */
+.hero {
+  display: flex;
+  height: 90vh;
+  width: 80%;
+  margin: 0 auto;
+  align-items: center;
+  gap: 2rem;
+  justify-content: space-between;
+  transition: transform 0.3s ease-in-out; /* Smooth scale effect on hover */
+}
+
+.hero:hover {
+  transform: scale(1.02); /* Slight zoom-in effect on hover */
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  flex: 1;
+  opacity: 0;
+  animation: fadeIn 1s ease-out forwards; /* Fade-in effect */
+}
+
+.hero-content h1 {
+  font-size: 2.5rem;
+  color: #333; /* Dark text for readability */
+  font-weight: 600;
+  transition: color 0.3s ease; /* Transition effect for text color */
+}
+
+.hero-content h1:hover {
+  color: #0077ff; /* Color change on hover */
+}
+
+.hero-img {
+  flex: 1;
+  overflow: hidden; /* Prevent image from overflowing */
+  transition: transform 0.3s ease; /* Smooth zoom effect */
+}
+
+.hero-img img {
+  width: 100%;
+  transition: transform 0.5s ease; /* Smooth zoom effect on image */
+}
+
+.hero-img img:hover {
+  transform: scale(1.05); /* Zoom-in effect on hover */
+}
+
+/* About Section */
+.about {
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  gap: 2rem;
+  justify-content: space-between;
+  margin-top: 3rem;
+  opacity: 0;
+  animation: fadeIn 1.5s ease-out forwards; /* Fade-in effect for about section */
+}
+
+.about-heading {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.about-heading:hover {
+  color: #0077ff; /* Color change on hover */
+}
+
+.about-content {
+  font-size: 1rem;
+  color: #777;
+  max-width: 600px;
+  line-height: 1.5;
+  opacity: 0;
+  animation: fadeIn 1.8s ease-out forwards; /* Fade-in with delay for content */
+}
+
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 770px) {
+  .hero {
+    height: auto;
+    flex-direction: column;
+    padding: 1rem;
+  }
+  .hero-content {
+    margin-top: 2rem;
+    align-items: center;
+    text-align: center;
+  }
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+  .about {
+    flex-direction: column;
+    margin-top: 2rem;
+    align-items: center;
+    text-align: center;
+  }
+  .about-heading {
+    margin-top: 4rem;
+    font-size: 1.8rem;
+  }
+}
+
+/* Keyframe for fade-in animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+}
