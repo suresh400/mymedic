@@ -11,14 +11,6 @@
 # production
 
 node_modules
-.env
-dist
-build
-coverage
-npm-debug.log
-yarn-error.log
-.DS_Store
-
 # misc
 .DS_Store
 .env.local
